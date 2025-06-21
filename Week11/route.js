@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     res.end('Willing to know more about me. Stay tune.');
   } else if (req.url === '/contact') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('You can contact me at: abdullateefdauda01@gmail.com');
+    res.end('You can contact me on: abdullateefdauda01@gmail.com');
   } else {
     // Make sure to write headers and end only once here
     res.writeHead(404, { 'Content-Type': 'text/plain' });
